@@ -5,6 +5,7 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import pb from "../lib/pocketbase";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const navigation = [
   { name: "Socials", href: "/socials" },
@@ -37,12 +38,12 @@ export default function ThemedPage({
           <div className="flex flex-1">
             <div className="hidden lg:flex lg:gap-x-12">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="text-sm font-semibold leading-6 text-gray-400 hover:text-white">
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
             <div className="flex lg:hidden">
@@ -55,11 +56,11 @@ export default function ThemedPage({
               </button>
             </div>
           </div>
-          <a href="/" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <h1 className="font-bold text-lg">Luis Thieme</h1>
-          </a>
+          </Link>
           <div className="flex flex-1 justify-end">
-            <a
+            <Link
               href={isLoggedIn ? "/profile" : "/login"}
               className="text-sm font-semibold leading-6 flex justify-center text-gray-400 hover:text-white">
               {isLoggedIn ? (
@@ -75,7 +76,7 @@ export default function ThemedPage({
                 "Log in"
               )}
               {isLoggedIn ? "" : <span aria-hidden="true">&rarr;</span>}
-            </a>
+            </Link>
           </div>
         </nav>
         <Dialog
@@ -95,11 +96,11 @@ export default function ThemedPage({
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link href="#" className="-m-1.5 p-1.5">
                 <p className="font-bold text-lg text-white">Luis Thieme</p>
-              </a>
+              </Link>
               <div className="flex flex-1 justify-end">
-                <a
+                <Link
                   href={isLoggedIn ? "/profile" : "/login"}
                   className="text-sm font-semibold leading-6 text-gray-400 hover:text-white">
                   {isLoggedIn ? (
@@ -115,17 +116,17 @@ export default function ThemedPage({
                     "Log in"
                   )}
                   <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="mt-6 space-y-2">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-400 hover:text-white">
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </Dialog.Panel>
