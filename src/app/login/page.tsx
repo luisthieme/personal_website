@@ -44,7 +44,7 @@ export default function Page() {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-          <div className="bg-transparent px-6 py-12 border border-gray-400 sm:rounded-lg sm:px-12">
+          <div className="bg-transparent mx-4 px-6 py-12 border border-gray-400 sm:rounded-lg sm:px-12">
             <form
               className="space-y-6"
               onSubmit={handleSubmit(login)}
