@@ -73,7 +73,7 @@ export default function ThemedPage({
                 </span>
               ) : (
                 "Log in"
-              )}{" "}
+              )}
               {isLoggedIn ? "" : <span aria-hidden="true">&rarr;</span>}
             </a>
           </div>
@@ -113,7 +113,7 @@ export default function ThemedPage({
                     </span>
                   ) : (
                     "Log in"
-                  )}{" "}
+                  )}
                   <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
