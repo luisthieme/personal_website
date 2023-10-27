@@ -18,6 +18,7 @@ export default function Home() {
         with the tech crowd, I am all in. Lets keep innovating and making tech
         magic happen!
       </p>
+      <img src="/static/images/jumping_luis.png" alt="luis" />
     </div>
   );
 }
