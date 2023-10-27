@@ -12,10 +12,10 @@ export default function Home() {
         </div>
       </div>
       <p className="mx-auto w-3/5 text-center font-bold text-gray-300">
-        Hey there, Im Luis, a software engineer based in Germany. I'm all about
-        coding, problem-solving, and creating cool digital stuff. Whether it's
+        Hey there, Im Luis, a software engineer based in Germany. I am all about
+        coding, problem-solving, and creating cool digital stuff. Whether it is
         building nifty code, working on exciting projects, or just hanging out
-        with the tech crowd, I'm all in. Let's keep innovating and making tech
+        with the tech crowd, I am all in. Lets keep innovating and making tech
         magic happen!
       </p>
     </div>
