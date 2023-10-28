@@ -1,5 +1,5 @@
 import PocketBase from "pocketbase";
 
-const pb = new PocketBase("https://172.105.72.152:443");
+const pb = new PocketBase("https://pocketbase-backend.fly.dev:8080");
 
 export default pb;
