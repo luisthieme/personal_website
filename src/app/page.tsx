@@ -22,8 +22,8 @@ export default function Home() {
       <p className="mx-auto w-3/5 text-center font-bold text-gray-400">
         Hey there, I&apos;m Luis, a software engineer based in Germany. I&apos;m
         all about coding, problem-solving, and creating cool digital stuff.
-        Whether it&apos;s building nifty code, working on exciting projects, or
-        just hanging out with the tech crowd, I&apos;m all in.
+        Whether it&apos;s building nifty code or working on exciting projects,
+        I&apos;m all in.
       </p>
       <h2 className="mx-auto w-3/5 text-center text-lg font-extrabold text-gray-300">
         Let&apos;s keep innovating and making tech magic happen!
