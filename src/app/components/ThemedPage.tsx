@@ -27,8 +27,6 @@ export default function ThemedPage({
     setIsLoggedIn(pb.authStore.isValid);
   }, [pathname]);
 
-  console.log(isLoggedIn);
-
   return (
     <div>
       <header className="bg-transparent border-b border-b-gray-600 mb-4">
