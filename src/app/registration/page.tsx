@@ -120,7 +120,7 @@ export default function Page() {
                     </div>
                     <div className="ml-3">
                       <h3 className="text-sm font-medium text-red-600">
-                        Passwords don't match.
+                        Passwords don&apos;t match.
                       </h3>
                     </div>
                   </div>
