@@ -7,6 +7,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      desktop: { min: "500px" },
+      phone: { max: "500px" },
+    },
     extend: {
       backgroundImage: {
         jumping_luis: "url('/static/images/jumping_luis.png')",
