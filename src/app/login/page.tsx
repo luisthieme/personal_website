@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 import pb from "../lib/pocketbase";
 import { useForm } from "react-hook-form";
 import { redirect, useRouter } from "next/navigation";
+import { XCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(false);
+  const [passwordIsIncorrect, setPasswordIsIncorrect] = useState(false);
   const { register, handleSubmit } = useForm();
   const router = useRouter();
 
@@ -20,17 +22,15 @@ export default function Page() {
     setIsLoading(true);
     try {
       const users = await pb.collection("users").getFullList();
-      console.log(users);
-      console.log(data.email);
-      console.log(data.password);
+      setPasswordIsIncorrect(false);
       const authData = await pb
         .collection("users")
         .authWithPassword(data.email, data.password);
+      router.push("/profile");
     } catch (e) {
-      alert(e);
+      setPasswordIsIncorrect(true);
     }
 
-    router.push("/profile");
     setIsLoading(false);
   }
 
@@ -84,6 +84,25 @@ export default function Page() {
                   />
                 </div>
               </div>
+              {passwordIsIncorrect ? (
+                <div className="rounded-md bg-transparent outline outline-red-600 p-4">
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <XCircleIcon
+                        className="h-5 w-5 text-red-600"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="ml-3">
+                      <h3 className="text-sm font-medium text-red-600">
+                        Invalid account information.
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <p></p>
+              )}
 
               <div>
                 <button
