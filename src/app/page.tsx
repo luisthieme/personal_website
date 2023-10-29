@@ -10,7 +10,7 @@ export default function Home() {
             I&apos;m Luis
           </h1>
         </div>
-        <div className="desktop:hidden max-w-[370px] mx-auto mt-1/5 bg-no-repeat bg-[center_right] bg-contain bg-jumping_luis h-[280px]">
+        <div className="desktop:hidden max-w-[380px] mx-auto mt-1/5 bg-no-repeat bg-[center_right] bg-contain bg-jumping_luis h-[280px]">
           <h1 className="w-fit p-2 mx-auto my-auto bg-gradient-to-r from-[#bdc3c7] to-[#2c3e50] bg-clip-text text-transparent text-8xl font-extrabold">
             Hey,
           </h1>
