@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      sm: { min: "640px" },
+      md: { min: "768px" },
+      lg: { min: "1024px" },
       desktop: { min: "500px" },
       phone: { max: "500px" },
     },
