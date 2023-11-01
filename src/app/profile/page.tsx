@@ -37,15 +37,42 @@ export default function Page() {
   }
 
   return (
-    <div>
-      <h1>Name: {username}</h1>
-      <h1>
-        Status:{" "}
-        {accountStatus
-          ? "Verified"
-          : "Not Verified. This process may take some time. Please be patient."}
-      </h1>
-      <button onClick={logout}>Log out</button>
-    </div>
+    <>
+      <div className="mt-8 h-fit w-1/2  phone:w-full mx-auto grid grid-cols-2 gap-4 gap-x-0">
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit px-4">
+          E-Mail:
+        </h1>
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit px-4">
+          {username}
+        </h1>
+        <hr />
+        <hr />
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit px-4">
+          Account Status:
+        </h1>
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit text-center px-4">
+          {accountStatus
+            ? "Verified"
+            : "Not Verified. This process may take some time. Please be patient."}
+        </h1>
+        <hr />
+        <hr />
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit px-4">
+          Account Rights:
+        </h1>
+        <h1 className="mx-auto text-lg phone:text-sm font-bold w-fit px-4">
+          User
+        </h1>
+        <hr />
+        <hr />
+      </div>
+      <div className="w-fit mx-auto mt-6">
+        <button
+          onClick={logout}
+          className="mx-auto w-fit rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20">
+          Log out
+        </button>
+      </div>
+    </>
   );
 }
