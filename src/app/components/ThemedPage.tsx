@@ -94,7 +94,7 @@ export default function ThemedPage({
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
               </div>
-              <Link href="#" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <p className="font-bold text-lg text-white">Luis Thieme</p>
               </Link>
               <div className="flex flex-1 justify-end">
@@ -102,7 +102,7 @@ export default function ThemedPage({
                   href={isLoggedIn ? "/profile" : "/login"}
                   className="text-sm font-semibold leading-6 text-gray-400 hover:text-white">
                   {isLoggedIn ? (
-                    <span className="inline-block h-10 w-10 overflow-hidden rounded-full bg-gray-100">
+                    <span className="inline-block h-6 w-6 overflow-hidden rounded-full bg-gray-100">
                       <svg
                         className="h-full w-full text-gray-300"
                         fill="currentColor"
@@ -113,7 +113,7 @@ export default function ThemedPage({
                   ) : (
                     "Log in"
                   )}
-                  <span aria-hidden="true">&rarr;</span>
+                  {isLoggedIn ? "" : <span aria-hidden="true">&rarr;</span>}
                 </Link>
               </div>
             </div>

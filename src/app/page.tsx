@@ -25,9 +25,30 @@ export default function Home() {
         Whether it&apos;s building nifty code or working on exciting projects,
         I&apos;m all in.
       </p>
-      <h2 className="mx-auto w-3/5 text-center text-lg font-extrabold text-gray-300">
+      <h2 className="mx-auto w-3/5 text-center text-2xl phone:text-xl mt-8 font-extrabold text-gray-300">
         Let&apos;s keep innovating and making tech magic happen!
       </h2>
+      <div className="border-b border-gray-400 mt-10"></div>
+      <div className="bg-transparent pb-20 pt-10 sm:pb-24 sm:pt-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <h2 className="text-center text-xl font-semibold leading-8 text-gray-300">
+            Follow me on my socials!
+          </h2>
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center text-gray-300 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <a
+              href="https://github.com/luisthieme"
+              className="col-span-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+              GitHub
+            </a>
+            <a className="col-span-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+              Instagram
+            </a>
+            <a className="col-span-2 col-start-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
