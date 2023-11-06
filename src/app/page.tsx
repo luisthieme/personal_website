@@ -29,7 +29,7 @@ export default function Home() {
         Let&apos;s keep innovating and making tech magic happen!
       </h2>
       <div className="border-b border-gray-400 mt-10"></div>
-      <div className="bg-transparent pb-20 pt-10 sm:pb-24 sm:pt-16">
+      <div className="bg-transparent mt-[3%] pb-20 pt-10 msm:pb-24 sm:pt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <h2 className="text-center text-xl font-semibold leading-8 text-gray-300">
             Follow me on my socials!
