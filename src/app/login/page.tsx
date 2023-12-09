@@ -21,14 +21,22 @@ export default function Page() {
   async function login(data: any) {
     setIsLoading(true);
     try {
-      const users = await pb.collection("users").getFullList();
       setPasswordIsIncorrect(false);
-      const authData = await pb
-        .collection("users")
-        .authWithPassword(data.email, data.password);
+      const authData = await pb.admins.authWithPassword(
+        data.email,
+        data.password
+      );
       router.push("/profile");
     } catch (e) {
-      setPasswordIsIncorrect(true);
+      try {
+        setPasswordIsIncorrect(false);
+        const authData = await pb
+          .collection("users")
+          .authWithPassword(data.email, data.password);
+        router.push("/profile");
+      } catch (e) {
+        setPasswordIsIncorrect(true);
+      }
     }
 
     setIsLoading(false);

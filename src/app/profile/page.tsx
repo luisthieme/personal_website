@@ -5,16 +5,20 @@ import pb from "../lib/pocketbase";
 import { redirect } from "next/navigation";
 import { useRouter } from "next/navigation";
 import Loading from "../components/Loading";
+import Link from "next/link";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState(true);
   const [username, setUsername] = useState("");
   const [accountStatus, setAccountStatus] = useState("");
+  const [admin, setAdmin] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
     setUsername(pb.authStore.model?.email);
     setAccountStatus(pb.authStore.model?.verified);
+    setAdmin(pb.authStore.isAdmin);
+
     if (pb.authStore.model?.verified) {
       console.log("verified");
     } else {
@@ -73,6 +77,17 @@ export default function Page() {
           Log out
         </button>
       </div>
+      {admin ? (
+        <div className="w-fit mx-auto mt-6">
+          <Link
+            href={"/admin/dashboard"}
+            className="mx-auto w-fit rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20">
+            Admin Dashboard
+          </Link>
+        </div>
+      ) : (
+        <p></p>
+      )}
     </>
   );
 }
