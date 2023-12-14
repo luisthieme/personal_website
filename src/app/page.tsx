@@ -37,13 +37,13 @@ export default function Home() {
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center text-gray-300 gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <a
               href="https://github.com/luisthieme"
-              className="col-span-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+              className="col-span-2 max-h-12 w-full outline rounded-lg p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
               GitHub
             </a>
-            <a className="col-span-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+            <a className="col-span-2 max-h-12 w-full outline rounded-lg p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
               Instagram
             </a>
-            <a className="col-span-2 col-start-2 max-h-12 w-full outline p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
+            <a className="col-span-2 col-start-2 max-h-12 w-full outline rounded-lg p-2 hover:outline-gray-100 object-contain lg:col-span-1 text-center text-xl font-extrabold">
               LinkedIn
             </a>
           </div>
