@@ -13,11 +13,12 @@
     "@heroicons/react": "^2.0.18",
     "headlessui": "^0.0.0",
     "heroicons": "^2.0.18",
-    "next": "13.5.6",
+    "next": "^14.0.4",
     "pocketbase": "^0.19.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.47.0"
+    "react-hook-form": "^7.47.0",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/node": "^20",
