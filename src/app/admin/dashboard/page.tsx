@@ -1,4 +1,4 @@
-import AdminDashboard from "@/app/components/AdminDashboard";
+import AdminDashboard from "@/app/components/AdminDashboard/AdminDashboard";
 import pb from "@/app/lib/pocketbase";
 
 export default async function Page() {
