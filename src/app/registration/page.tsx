@@ -29,8 +29,9 @@ export default function Page() {
           email: data.email,
           password: data.password,
           passwordConfirm: data.password,
+          emailVisibility: true,
         });
-        const authData = await pb
+        await pb
           .collection("users")
           .authWithPassword(data.email, data.password);
         router.push("/profile");

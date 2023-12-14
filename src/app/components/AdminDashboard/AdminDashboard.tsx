@@ -21,30 +21,6 @@ type User = {
 export default function AdminDashboard(users: any) {
   //any is bad prac pls fix soon
 
-  // const [data, setData] = useState(users);
-
-  // function getUsers() {
-  //   const data = pb
-  //     .collection("users")
-  //     .getFullList({
-  //       sort: "+email",
-  //     })
-  //     .then((data) => {
-  //       return data;
-  //     });
-  //   return data;
-  // }
-
-  // pb.collection("users").subscribe("*", async (e) => {
-  //   getUsers();
-  // });
-
-  // useEffect(() => {
-
-  // }, []);
-
-  // revalidatePath("admin/dashboard");
-
   return (
     <>
       <div className="px-4 sm:px-6 lg:px-8">
